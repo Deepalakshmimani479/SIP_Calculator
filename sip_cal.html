@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator</title>
+  <link rel="stylesheet" href="sip.css">
+</head>
+<body>
+  <div class="container-2">
+    <!-- Name Section -->
+    <div class="name">
+      <label class="name-label">Your Name:</label><br><br>
+      <input class="name-field" type="text" id="username" placeholder="Type Here....">
+      <button class="done" onclick="showName()"><strong>Done</strong></button>
+      <p id="name-output"></p>
+    </div>
+  
+    <!-- SIP Section -->
+    <div class="table">
+      <label class="Investment">Monthly Investment (&#8377;):</label>
+      <input class="Inves-field" type="number" id="investment"><br><br>
+
+      <label class="rate">Expected return rate (%):</label>
+      <input class="rate-field" type="number" id="rate"><br><br>
+
+      <label>Time Period (years):</label>
+      <input class="period-field" type="number" id="period"><br><br>
+
+      <p id="error-message" style="color:red;"></p>
+      <button class="done" onclick="doCalculate()">Calculate</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
